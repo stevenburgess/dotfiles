@@ -1,0 +1,37 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+alias ls="ls --color -p"
+alias l="ls"
+alias ll="ls -lh"
+alias ifc="/sbin/ifconfig"
+alias vi="vim"
+alias sue="sudo vim "
+alias op="opera &"
+alias go="google-chrome &"
+alias wha="whoami;hostname;hostname -i; pwd"
+
+#git helpers
+alias gitk="gitk --all &"
+alias gs="git status"
+alias gb="git branch -a"
+alias gl="git log --graph --decorate=short"
+alias gcom="git commit -v"
+
+#start up my work editor of choice
+alias ecl="pstorm &"
+
+#zfs is all rootspace
+alias zfs="sudo zfs"
+alias zpool="sudo zpool"
+alias zdb="sudo zdb"
+
+#some zfs helpers
+alias mst="date +'%s'"
+
+PS1='$PWD > '

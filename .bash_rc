@@ -33,5 +33,7 @@ alias zdb="sudo zdb"
 
 #some zfs helpers
 alias mst="date +'%s'"
+alias zmount="zfs list -o name,mounted,mountpoint,canmount"
+alias zsnaps="zfs list -t all -r"
 
 PS1='$PWD > '

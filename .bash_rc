@@ -40,4 +40,12 @@ alias mst="date +'%s'"
 alias zmount="zfs list -o name,mounted,mountpoint,canmount"
 alias zsnaps="zfs list -t all -r"
 
+#tmux shortcuts
+#list the current sessions
+alias tml="tmux list-sessions"
+#set up for starting a new named session
+alias tmn="tmux new -s"
+#set up for connecting to a named session
+alias tmr="tmux attach -t"
+
 PS1='$PWD > '

@@ -36,3 +36,17 @@ map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
+
+"show whaitespace on demand
+"start by setting how things appear
+"newline is $
+"trailing space is ~
+"tab is  >-----
+"extends/procees only apply when wrap is off, they show lines going off screen
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
+"setting the mapleader so I can togle things
+let mapleader = ","
+let g:mapleader = ","
+"so now pressing ,w will toggle showing all whitespace
+nmap <leader>w :set list! list?<CR>

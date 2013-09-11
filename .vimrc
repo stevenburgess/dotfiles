@@ -49,4 +49,4 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 let mapleader = ","
 let g:mapleader = ","
 "so now pressing ,w will toggle showing all whitespace
-nmap <leader>w :set list! list?<CR>
+nmap <leader>w :set list!<CR>

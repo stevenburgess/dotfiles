@@ -27,9 +27,6 @@ alias gl="git log --graph --decorate=short"
 alias gla="gl --stat"
 alias gcom="git commit -v"
 
-#start up my work editor of choice
-alias ecl="pstorm &"
-
 #zfs is all rootspace
 alias zfs="sudo zfs"
 alias zpool="sudo zpool"

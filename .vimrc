@@ -50,3 +50,14 @@ let mapleader = ","
 let g:mapleader = ","
 "so now pressing ,w will toggle showing all whitespace
 nmap <leader>w :set list!<CR>
+
+"a function to reverse the background color
+function! ReverseBackground()
+ if &background=="light"
+ set background=dark
+ else
+ set background=light
+ endif
+endfunction
+noremap <leader>l :call ReverseBackground()<CR>
+

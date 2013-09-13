@@ -1,4 +1,4 @@
-"enables syntax highlighting for alot of different things
+"enables syntax highlighting for a lot of different things
 syntax enable
 "currently using the dark solarized theme
 set background=dark
@@ -11,16 +11,16 @@ set guifont=Monospace\ 14
 "have a little context
 set so=7
 
-"show your current line and colum numbers, and the % of the file
+"show your current line and column numbers, and the % of the file
 "you have gone through.  Displayed at the bottom of the screen
 set ruler
 
 "set j to actually go down one visual line, not to the next line at
-"that column number.  This is useful when lines are wraping
+"that column number.  This is useful when lines are wrapping
 map j gj
 map k gk
 
-"0 usually goes to the first characetr on a line, have it go to
+"0 usually goes to the first character on a line, have it go to
 "the first non-blank character instead
 map 0 ^
 
@@ -37,15 +37,15 @@ map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
-"show whaitespace on demand
+"show whitespace on demand
 "start by setting how things appear
 "newline is $
 "trailing space is ~
 "tab is  >-----
-"extends/procees only apply when wrap is off, they show lines going off screen
+"extends/process only apply when wrap is off, they show lines going off screen
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
-"setting the mapleader so I can togle things
+"setting the mapleader so I can toggle things
 let mapleader = ","
 let g:mapleader = ","
 "so now pressing ,w will toggle showing all whitespace

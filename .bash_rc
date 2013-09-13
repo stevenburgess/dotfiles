@@ -20,9 +20,9 @@ alias wha="whoami;hostname;hostname -i; pwd"
 alias gitk="gitk --all &"
 alias gs="git status"
 alias gb="git branch -a"
-#a pretty terminal hisotry viewer, decorate=short provided branch information
+#a pretty terminal history viewer, decorate=short provided branch information
 alias gl="git log --graph --decorate=short"
-#adds the --stat to get file info, if you want it more in a gith status
+#adds the --stat to get file info, if you want it more in a git status
 #context, use --name-status
 alias gla="gl --stat"
 alias gcom="git commit -v"

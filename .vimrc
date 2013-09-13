@@ -61,3 +61,14 @@ function! ReverseBackground()
 endfunction
 noremap <leader>l :call ReverseBackground()<CR>
 
+"pressing ,ss will toggle spell checking
+map <leader>ss :setlocal spell!<cr>
+"go to next miss spelt word
+map <leader>sl ]s
+"go to previous mis spelt word
+map <leader>sh [s
+"add word to dictionary
+map <leader>sa zg
+"bring up list of suggestions
+map <leader>s. z=
+

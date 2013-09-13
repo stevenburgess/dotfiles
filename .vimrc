@@ -6,6 +6,10 @@ colorscheme solarized
 "enlarge the font, for my po po eyes
 set guifont=Monospace\ 14
 
+"setting the mapleader so I can toggle things
+let mapleader = ","
+let g:mapleader = ","
+
 "sets a buffer for the tops and bottoms of the screen,
 "so when you are scrolling off the bottom or top you
 "have a little context
@@ -45,9 +49,6 @@ map <Down> <Nop>
 "extends/process only apply when wrap is off, they show lines going off screen
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
-"setting the mapleader so I can toggle things
-let mapleader = ","
-let g:mapleader = ","
 "so now pressing ,w will toggle showing all whitespace
 nmap <leader>w :set list!<CR>
 

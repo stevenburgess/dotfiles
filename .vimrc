@@ -78,3 +78,6 @@ map <leader>s. z=
 "above the command bar.  you can navigate this bar with the arrow keys
 set wildmenu
 
+"sets search to ignore case
+set ignorecase
+

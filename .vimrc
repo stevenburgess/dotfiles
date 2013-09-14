@@ -81,3 +81,13 @@ set wildmenu
 "sets search to ignore case
 set ignorecase
 
+"PROBABLY DEFAULTS
+"these entries are already defaults on most VIM implementations I have seen
+"but I set them here to make darn sure
+
+"highlight search results
+set hlsearch
+
+"highlight matching brackets
+set showmatch
+

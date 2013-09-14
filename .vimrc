@@ -73,3 +73,8 @@ map <leader>sa zg
 "bring up list of suggestions
 map <leader>s. z=
 
+"this changes the way tab completion of VIM commands works, instead
+"of navigating the choices via TAB and SHIFT TAB you will see a full list
+"above the command bar.  you can navigate this bar with the arrow keys
+set wildmenu
+

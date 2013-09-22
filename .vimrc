@@ -81,6 +81,12 @@ set wildmenu
 "sets search to ignore case
 set ignorecase
 
+"turns on incremental search, so that while you are typing your
+"search term, results begin appearing. note that it does not highlight
+"all occurrences of your incremental search, just the first one, the rest
+"will be highlighted when you enter the search.
+set incsearch
+
 "PROBABLY DEFAULTS
 "these entries are already defaults on most VIM implementations I have seen
 "but I set them here to make darn sure

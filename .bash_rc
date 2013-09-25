@@ -26,6 +26,8 @@ alias gl="git log --graph --decorate=short"
 #context, use --name-status
 alias gla="gl --stat"
 alias gcom="git commit -v"
+#fetch from all remotes
+alias gf="git fetch --all"
 
 #zfs is all rootspace
 alias zfs="sudo zfs"

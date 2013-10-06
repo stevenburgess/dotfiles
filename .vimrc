@@ -87,6 +87,9 @@ set ignorecase
 "will be highlighted when you enter the search.
 set incsearch
 
+"press ,n to toggle showing the line numbers
+map <leader>n :set number!<CR>
+
 "PROBABLY DEFAULTS
 "these entries are already defaults on most VIM implementations I have seen
 "but I set them here to make darn sure

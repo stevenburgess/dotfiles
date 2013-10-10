@@ -90,6 +90,15 @@ set incsearch
 "press ,n to toggle showing the line numbers
 map <leader>n :set number!<CR>
 
+"disable all backup files, as these really only bother me when a terminal
+"has crashed, I have yet to need the data in a swap file back.
+"no backup files
+set nobackup
+"only in case you don't want a backup file while editing
+set nowritebackup
+"no swap files
+set noswapfile
+
 "PROBABLY DEFAULTS
 "these entries are already defaults on most VIM implementations I have seen
 "but I set them here to make darn sure

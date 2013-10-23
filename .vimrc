@@ -99,6 +99,28 @@ set nowritebackup
 "no swap files
 set noswapfile
 
+"building a good statusline
+
+"set it so status line is always visible
+set laststatus=2
+"full path of file in buffer, but not really since it shortens your home
+"directory to ~/
+set statusline=%F
+"shows the filetype in square brackets, may remove later since it should be
+"evident in other ways
+set statusline+=%y
+"shows a [+] when the file has been modified sine the last time it was written
+set statusline+=%m
+"move to the right side of the screen
+set statusline+=%=
+"show the column the cursor is in, followed by a comma
+set statusline+=%c,
+"gives you the current line / total lines
+set statusline+=%l/%L
+"displays percent through file that you have been, Top and Bot when
+"appropriate
+set statusline+=\ %P     "percent through file
+
 "PROBABLY DEFAULTS
 "these entries are already defaults on most VIM implementations I have seen
 "but I set them here to make darn sure

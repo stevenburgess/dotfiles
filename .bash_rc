@@ -37,7 +37,14 @@ alias zdb="sudo zdb"
 #some zfs helpers
 alias mst="date +'%s'"
 alias zmount="zfs list -o name,mounted,mountpoint,canmount"
-alias zsnaps="zfs list -t all -r"
+#list all the snapshots for a given filesystem, with some helpful data.
+#-t snapshot so you don't get data about any child filesystems
+#-d 1 so you can get its snapshots, without -r, regardless of listsnapshots
+#-o name     to know what its name
+#   used     how much space is consumed by this snapshot
+#   refer    the size of the filesystem at the time this snapshot was taken
+#   written  how much data was written to this file system since the last snap
+alias zsnaps="zfs list -t snapshot -d 1 -o name,used,refer,written"
 
 #tmux shortcuts
 #list the current sessions

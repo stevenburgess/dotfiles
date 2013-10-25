@@ -131,3 +131,11 @@ set hlsearch
 "highlight matching brackets
 set showmatch
 
+"attempt to indent correctly
+set autoindent
+set smartindent
+
+"wrap long lines, as opposed to letting them scroll off the screen.  If you
+"unset this, you might as well turn of the gj and gk bindings.
+set wrap
+

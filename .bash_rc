@@ -13,7 +13,7 @@ alias ifc="/sbin/ifconfig"
 alias vi="vim"
 alias sue="sudo vim "
 alias op="opera &"
-alias go="google-chrome &"
+alias go="cd /tmp; google-chrome &"
 alias wha="whoami;hostname;hostname -i; pwd"
 
 #git helpers

@@ -55,6 +55,11 @@ nmap <leader>w :set list!<CR>
 "press ,n to toggle showing the line numbers
 map <leader>n :set number!<CR>
 
+"press ,p to toggle plaste mode, for more on paste mode see
+"github.com/stevenburgess/vim-paste
+"setlocal seems like the best choice here, to only set it for this buffer
+map <leader>p :setlocal paste!<CR>
+
 "a function to reverse the background color
 function! ReverseBackground()
  if &background=="light"

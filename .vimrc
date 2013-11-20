@@ -52,6 +52,9 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 "so now pressing ,w will toggle showing all whitespace
 nmap <leader>w :set list!<CR>
 
+"press ,n to toggle showing the line numbers
+map <leader>n :set number!<CR>
+
 "a function to reverse the background color
 function! ReverseBackground()
  if &background=="light"
@@ -86,9 +89,6 @@ set ignorecase
 "all occurrences of your incremental search, just the first one, the rest
 "will be highlighted when you enter the search.
 set incsearch
-
-"press ,n to toggle showing the line numbers
-map <leader>n :set number!<CR>
 
 "disable all backup files, as these really only bother me when a terminal
 "has crashed, I have yet to need the data in a swap file back.

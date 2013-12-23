@@ -144,3 +144,6 @@ set smartindent
 "unset this, you might as well turn of the gj and gk bindings.
 set wrap
 
+"this fixes an error I was getting on newer terminals where the color column
+"and syntax highlighting were not showing up.
+set t_Co=256

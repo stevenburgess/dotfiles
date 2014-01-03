@@ -43,11 +43,11 @@ map <Down> <Nop>
 
 "show whitespace on demand
 "start by setting how things appear
-"newline is $
-"trailing space is ~
-"tab is  >-----
+"eol is desplayed every newline character
+"tab is any tab
+"trail is any spaces after the last non-space character on a line
 "extends/process only apply when wrap is off, they show lines going off screen
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+exec "set listchars=eol:\uB6,tab:\uBB\u2014,trail:\u2423,extends:>,precedes:<"
 
 "so now pressing ,w will toggle showing all whitespace
 nmap <leader>w :set list!<CR>

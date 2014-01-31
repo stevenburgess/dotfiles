@@ -16,6 +16,8 @@ alias sue="sudo vim "
 alias op="opera &"
 alias go="cd /tmp; google-chrome &"
 alias wha="whoami;hostname;hostname -i; pwd"
+#I use readlink -f all the time to print out a path to grab with tmux
+alias rf="readlink -f "
 
 #git helpers
 alias gitk="gitk --all &"

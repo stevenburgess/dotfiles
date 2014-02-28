@@ -57,4 +57,16 @@ alias tmn="tmux new -s"
 #set up for connecting to a named session
 alias tmr="tmux attach -t"
 
+# A trending repo one day was getting a terminal wipe with pound signs
+# I liked the idea, but since I am a sucker for 80 char borders, I wrote
+# this to show where 80 chars was, and give me a bit of a screen wipe
+
+# Build a string of 80 pund signs once
+poundsigns=""
+for i in {1..80}; do poundsigns=${poundsigns}'#'; done;
+#print that string 40 times, each echo gives us a newline
+hr () {
+    for i in {1..40}; do echo ${poundsigns}; done;
+}
+
 PS1='$PWD > '

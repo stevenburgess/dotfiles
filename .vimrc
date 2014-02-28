@@ -24,6 +24,10 @@ set ruler
 map j gj
 map k gk
 
+"set ctrl-j to go down 10 lines, same for ctrl-k
+map <C-j> 10j
+map <C-k> 10k
+
 "0 usually goes to the first character on a line, have it go to
 "the first non-blank character instead
 map 0 ^

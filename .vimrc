@@ -144,6 +144,13 @@ set showmatch
 set autoindent
 set smartindent
 
+"settings for python
+"sets the width of tab and the autocolete indentation to 4
+set tabstop=4
+set shiftwidth=4
+"makes the tabs actaully be spaces
+set expandtab
+
 "wrap long lines, as opposed to letting them scroll off the screen.  If you
 "unset this, you might as well turn of the gj and gk bindings.
 set wrap

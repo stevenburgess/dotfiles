@@ -32,7 +32,8 @@ alias gb="git branch -a"
 alias gl="git log --graph --decorate=short"
 #adds the --stat to get file info, if you want it more in a git status
 #context, use --name-status
-alias gla="gl --stat"
+alias gll="gl --stat"
+alias gla="gl --all"
 alias gcom="git commit -v"
 #fetch from all remotes
 alias gf="git fetch --all"

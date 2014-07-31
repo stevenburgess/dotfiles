@@ -64,6 +64,11 @@ map <leader>n :set number!<CR>
 "setlocal seems like the best choice here, to only set it for this buffer
 map <leader>p :setlocal paste!<CR>
 
+"press ,t to trim all end of line whitespace. The regex is: when you see any
+"number of whitespace characters, \s\+, followed by the end of the line, $,
+"replace them with nothing.
+map <leader>t :%s/\s\+$//<CR>
+
 "a function to reverse the background color
 function! ReverseBackground()
  if &background=="light"

@@ -63,6 +63,9 @@ alias tmn="tmux new -s"
 #set up for connecting to a named session
 alias tmr="tmux attach -t"
 
+# create a new ubuntu docker container for quick testing.
+alias nvm="docker run -i -t ubuntu /bin/bash"
+
 # A trending repo one day was getting a terminal wipe with pound signs
 # I liked the idea, but since I am a sucker for 80 char borders, I wrote
 # this to show where 80 chars was, and give me a bit of a screen wipe

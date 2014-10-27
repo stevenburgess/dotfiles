@@ -13,7 +13,7 @@ alias la="ls -a"
 alias ifc="/sbin/ifconfig"
 alias sue="sudo vim "
 alias op="opera &"
-alias go="cd /tmp; google-chrome &"
+alias gog="cd /tmp; google-chrome &"
 alias wha="whoami;hostname;hostname -i; pwd"
 #I use readlink -f all the time to print out a path to grab with tmux
 #alias rf='echo "rsync $(whoami)@$(hostname):$(readlink -f $1) ."'

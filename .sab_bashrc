@@ -64,7 +64,7 @@ alias tmn="tmux new -s"
 alias tmr="tmux attach -t"
 
 # create a new ubuntu docker container for quick testing.
-alias nvm="docker run -i -t ubuntu /bin/bash"
+alias nvm="docker run --rm -i -t ubuntu /bin/bash"
 
 # A trending repo one day was getting a terminal wipe with pound signs
 # I liked the idea, but since I am a sucker for 80 char borders, I wrote

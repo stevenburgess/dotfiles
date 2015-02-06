@@ -54,6 +54,7 @@ alias zmount="zfs list -o name,mounted,mountpoint,canmount"
 #   refer    the size of the filesystem at the time this snapshot was taken
 #   written  how much data was written to this file system since the last snap
 alias zsnaps="zfs list -t snapshot -d 1 -o name,used,refer,written"
+alias zlist="zfs list -o name,refer,used,compressratio"
 
 #tmux shortcuts
 #list the current sessions

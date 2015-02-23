@@ -2,7 +2,7 @@
 
 #on OSX 10.9 ls --color does not exist, and on the linux systems i checked
 #-G changed grouping, not color. hopefully this switch keeps it clear.
-if [ `uname` == Darwin ]; then
+if [ `uname` == Darwin ] || [ `uname` == FreeBSD ]; then
 	alias ls="ls -G -p"
 else
 	alias ls="ls --color -p"

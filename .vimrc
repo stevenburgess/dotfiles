@@ -152,6 +152,10 @@ set showmatch
 set autoindent
 set smartindent
 
+"however the above smart indent messed with lines that start with #, pushing
+"them to the first column. You can disable this with the following line:
+inoremap # X<BS>#
+
 "settings for python
 "sets the width of tab and the autocolete indentation to 4
 set tabstop=4

@@ -7,8 +7,8 @@ colorscheme solarized
 set guifont=Monospace\ 14
 
 "setting the mapleader so I can toggle things
-let mapleader = ","
-let g:mapleader = ","
+let mapleader = "\<Space>"
+let g:mapleader = "\<Space>"
 
 "sets a buffer for the tops and bottoms of the screen,
 "so when you are scrolling off the bottom or top you
@@ -54,7 +54,7 @@ map <Down> <Nop>
 exec "set listchars=eol:\uB6,tab:\uBB\u2014,trail:\u2423,extends:>,precedes:<"
 
 "so now pressing ,w will toggle showing all whitespace
-nmap <leader>w :set list!<CR>
+nmap <leader>a :set list!<CR>
 
 "press ,n to toggle showing the line numbers
 map <leader>n :set number!<CR>
@@ -68,6 +68,12 @@ map <leader>p :setlocal paste!<CR>
 "number of whitespace characters, \s\+, followed by the end of the line, $,
 "replace them with nothing.
 map <leader>t :%s/\s\+$//<CR>
+
+" Save the file with leader w
+noremap <Leader>w :w<CR>
+
+" Quit the editor with leader q
+noremap <Leader>q :q<CR>
 
 "a function to reverse the background color
 function! ReverseBackground()

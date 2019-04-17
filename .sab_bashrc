@@ -88,4 +88,8 @@ function find_not_stupid()
 }
 alias fns=find_not_stupid
 
+# use $CDPATH to enable `cd` into any directory in your home dir or your
+# projects folder from anywhere.
+export CDPATH=".:~:~/projects"
+
 PS1='$PWD > '

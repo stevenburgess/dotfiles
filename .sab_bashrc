@@ -79,4 +79,13 @@ hr () {
     for i in {1..40}; do echo ${poundsigns}; done;
 }
 
+# I often invoke find with the current directory and a regex for the name, but
+# thats a whole bunch of typing. This function should do it.
+function find_not_stupid()
+{
+    regex=$1
+    find . -iname "*${regex}*"
+}
+alias fns=find_not_stupid
+
 PS1='$PWD > '

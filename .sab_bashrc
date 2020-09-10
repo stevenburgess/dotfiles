@@ -15,6 +15,9 @@ alias sue="sudo vim "
 alias op="opera &"
 alias gog="cd /tmp; google-chrome &"
 alias wha="whoami;hostname;hostname -i; pwd"
+
+alias pyenv="python3 -m pipenv shell"
+
 #I use readlink -f all the time to print out a path to grab with tmux
 #alias rf='echo "rsync $(whoami)@$(hostname):$(readlink -f $1) ."'
 function remote_link()

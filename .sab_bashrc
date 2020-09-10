@@ -91,6 +91,13 @@ function find_not_stupid()
 }
 alias fns=find_not_stupid
 
+function git_new_branch()
+{
+    branch_name=$1
+    git checkout -b ${branch_name} origin/develop
+}
+alias gnb=git_new_branch
+
 # use $CDPATH to enable `cd` into any directory in your home dir or your
 # projects folder from anywhere.
 export CDPATH=".:~:~/projects"

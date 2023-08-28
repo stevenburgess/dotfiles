@@ -17,6 +17,7 @@ alias gog="cd /tmp; google-chrome &"
 alias wha="whoami;hostname;hostname -i; pwd"
 
 alias pyenv="python3 -m pipenv shell"
+alias pycreate="python3 -m pipenv --python 3 install"
 
 #I use readlink -f all the time to print out a path to grab with tmux
 #alias rf='echo "rsync $(whoami)@$(hostname):$(readlink -f $1) ."'
@@ -98,8 +99,26 @@ function git_new_branch()
 }
 alias gnb=git_new_branch
 
+function git_update_remote()
+{
+    branch_name=$(git branch --show-current)
+    git push -f origin HEAD:${branch_name}
+}
+alias gur=git_update_remote
+
 # use $CDPATH to enable `cd` into any directory in your home dir or your
 # projects folder from anywhere.
 export CDPATH=".:~:~/projects"
+
+# Kubernetes
+# For this to work best, also source a version of `kubectl completion bash`
+# in a file named `.kc.sh`
+alias kc="kubectl"
+alias ku="aws eks update-kubeconfig --name"
+alias kn="kubectl config set-context --current --namespace"
+
+# AWS
+alias awslogin="aws sso login"
+alias awho="aws sts get-caller-identity"
 
 PS1='$PWD > '
